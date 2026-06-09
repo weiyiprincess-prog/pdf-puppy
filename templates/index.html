@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <title>PDF Puppy</title>
+</head>
+<body>
+
+    <h1>🐶 PDF Puppy</h1>
+    <p>上傳 PDF，狗狗幫你壓縮！</p>
+
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="pdf" accept="application/pdf">
+        <br><br>
+        <button type="submit">開始壓縮</button>
+    </form>
+
+    {% if message %}
+        <h2>{{ message }}</h2>
+    {% endif %}
+
+</body>
+</html>
